@@ -52,7 +52,7 @@ export default class CostSelect extends React.Component<Props, State> {
         <label>
           <input type='radio' name='cost' onClick={() => this.setState({ selected: 'blood' }, () => this.onUpdate())} />
           <span>Blood</span>
-          <input type="number" min={1} max={4} defaultValue={1} disabled={this.state.selected !== 'blood'} onChange={e => this.setState({ blood: Number(e.target.value) }, () => this.onUpdate())} />
+          <input type="number" min={1} max={10} defaultValue={1} disabled={this.state.selected !== 'blood'} onChange={e => this.setState({ blood: Number(e.target.value) }, () => this.onUpdate())} />
         </label>
         <label>
           <input type='radio' name='cost' onClick={() => this.setState({ selected: 'bone' }, () => this.onUpdate())} />
