@@ -20,7 +20,7 @@ export type Card = {
   bloodCost: number, // 0 - 4
   boneCost: number, // 0 - 13, 0 - 10
   energyCost: number, // 0 - 6
-  gemCost?: { orange: boolean, green: boolean, blue: boolean },
+  gemCost?: { orange1: boolean, green1: boolean, blue1: boolean, orange2: boolean, green2: boolean, blue2: boolean, orange3: boolean, green3: boolean, blue3: boolean },
   sigils: string[], // Sigil[], max length 3
   decals: string[], // ('blood' | 'smoke' | 'paint')[]
   temple: string, // Temple
