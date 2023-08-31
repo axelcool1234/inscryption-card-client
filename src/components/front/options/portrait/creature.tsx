@@ -41,14 +41,14 @@ export default class CreaturePortraitSelect extends React.Component<Props> {
             <option value='FieldMouse'>Field Mice</option>
             <option value='Geck'>Geck</option>
             <option value='Goat'>Black Goat</option>
-            {/* <option value='GoatSexy'>Black Goat</option> */}
+            <option value='GoatSexy'>Sexy Black Goat</option>
             <option value='Grizzly'>Grizzly</option>
             <option value='Hodag'>Hodag</option>
             <option value='Hydra'>Hydra</option>
             <option value='HydraEgg'>Curious Egg</option>
             <option value='Ijiraq'>Ijiraq</option>
             <option value='JerseyDevil'>Child 13</option>
-            {/* <option value='JerseyDevilFlying'>Child 13 (Flying)</option> */}
+            <option value='JerseyDevilFlying'>Child 13 (Flying)</option>
             <option value='Kingfisher'>Kingfisher</option>
             <option value='Kraken'>Great Kraken</option>
             <option value='Lammergeier'>Lammergeier</option>
@@ -59,6 +59,7 @@ export default class CreaturePortraitSelect extends React.Component<Props> {
             <option value='MealWorm'>Mealworm</option>
             <option value='Mole'>Mole</option>
             <option value='MoleMan'>Mole Man</option>
+            <option value='MoleSeaman'>Mole Seaman</option>
             <option value='Moose'>Moose Buck</option>
             <option value='Mothman_Stage1'>Mothman (Stage 1)</option>
             <option value='Mothman_Stage2'>Mothman (Stage 2)</option>
@@ -79,6 +80,8 @@ export default class CreaturePortraitSelect extends React.Component<Props> {
             <option value='Raccoon'>Raccoon</option>
             <option value='RedHart'>Red Hart</option>
             <option value='Shark'>Great White</option>
+            <option value='SkeletonParrot'>Skeleton Parrot</option>
+            <option value='SkeletonPirate'>Skeleton Pirate</option>
             <option value='Skink'>Skink</option>
             <option value='Skunk'>Skunk</option>
             <option value='Snapper'>River Snapper</option>
@@ -102,6 +105,7 @@ export default class CreaturePortraitSelect extends React.Component<Props> {
             <option value='WolfCub'>Wolf Cub</option>
             <option value='Wolverine'>Wolverine</option>
             <option value='BaitBucket'>Bait Bucket</option>
+            <option value='BrokenEgg'>Broken Egg</option>
             <option value='Dam'>Dam</option>
             <option value='DausBell'>Chime</option>
             <option value='GoldNugget'>Gold Nugget</option>
