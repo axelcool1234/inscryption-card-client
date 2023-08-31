@@ -5,7 +5,7 @@ type Props = { onValueChange: (fused: boolean, golden: boolean, squid: boolean, 
   blood1: boolean, blood2: boolean, blood3: boolean, blood4: boolean,
   paint1: boolean, paint2: boolean, paint3: boolean,
   snelk1: boolean, snelk2: boolean, snelk3: boolean, snelk4: boolean, snelk5: boolean, snelk6: boolean,
-  stitches: boolean, fungus: boolean) => void }
+  stitches: boolean, fungus: boolean, child: boolean) => void }
 type State = {
   fused: boolean,
   golden: boolean,
@@ -26,6 +26,7 @@ type State = {
   snelk6: boolean,
   stitches: boolean,
   fungus: boolean,
+  child: boolean,
 }
 export default class Flags extends React.Component<Props, State> {
 
@@ -51,6 +52,7 @@ export default class Flags extends React.Component<Props, State> {
       snelk6: false,
       stitches: false,
       fungus: false,
+      child: false,
     }
   }
 
@@ -59,7 +61,7 @@ export default class Flags extends React.Component<Props, State> {
       this.state.blood1, this.state.blood2, this.state.blood3, this.state.blood4,
       this.state.paint1, this.state.paint2, this.state.paint3,
       this.state.snelk1, this.state.snelk2, this.state.snelk3, this.state.snelk4, this.state.snelk5, this.state.snelk6,
-      this.state.stitches, this.state.fungus)
+      this.state.stitches, this.state.fungus, this.state.child)
   }
 
   render() {
@@ -84,6 +86,7 @@ export default class Flags extends React.Component<Props, State> {
         { value: 'snelk6', label: 'Vertabrae 6' },
         { value: 'stitches', label: 'Stitches' },
         { value: 'fungus', label: 'Fungus' },
+        { value: 'child', label: 'Hungry Child' },
       ]}
       onUpdate={opts => {
         const selected = opts.filter(opt => opt.checked).map(opt => opt.value)
@@ -107,6 +110,7 @@ export default class Flags extends React.Component<Props, State> {
           snelk6: selected.includes('snelk6'),
           stitches: selected.includes('stitches'),
           fungus: selected.includes('fungus'),
+          child: selected.includes('child'),
         }, this.onUpdate)
       }}
     />)
