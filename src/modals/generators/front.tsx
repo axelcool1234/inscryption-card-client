@@ -42,6 +42,8 @@ export default class CardGenerator extends React.Component<{}, { errorCategory?:
             }
 
             const url = `${endpoint}/api/card/${meta.act}/front${parameters.length ? ('?' + parameters.join('&')) : ''}`
+            console.log(url)
+            console.log(opts.body)
 
             const response = await fetch(url, opts)
             if (!response.ok) {

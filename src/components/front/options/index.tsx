@@ -31,6 +31,21 @@ export type Card = {
   squid: boolean,
   fused: boolean,
   smoke: boolean,
+  blood1: boolean,
+  blood2: boolean,
+  blood3: boolean,
+  blood4: boolean,
+  paint1: boolean,
+  paint2: boolean,
+  paint3: boolean,
+  snelk1: boolean,
+  snelk2: boolean,
+  snelk3: boolean,
+  snelk4: boolean,
+  snelk5: boolean,
+  snelk6: boolean,
+  stitches: boolean,
+  fungus: boolean,
   portrait?: PortraitData
 }
 
@@ -54,6 +69,21 @@ export const templateCard: Card = {
   squid: false,
   fused: false,
   smoke: false,
+  blood1: false,
+  blood2: false,
+  blood3: false,
+  blood4: false,
+  paint1: false,
+  paint2: false,
+  paint3: false,
+  snelk1: false,
+  snelk2: false,
+  snelk3: false,
+  snelk4: false,
+  snelk5: false,
+  snelk6: false,
+  stitches: false,
+  fungus: false,
   portrait: undefined
 }
 
@@ -74,7 +104,7 @@ export default class CardGeneratorOptions extends React.Component<{ onCardUpdate
       { title: 'Portrait', category: 'portrait', element: <Portrait onValueChange={portrait => this.setState({ portrait }, this.onUpdate)} /> },
       { title: 'Tribes', element: <Tribe onValueChange={tribes => this.setState({ tribes }, this.onUpdate)} /> },
       { title: 'Temple', element: <Temple onValueChange={temple => this.setState({ temple }, this.onUpdate)} />, help: 'Card appearance might be affected in different card styles' },
-      { title: 'Other', element: <Flags onValueChange={(fused, golden, squid, smoke) => this.setState({ fused, golden, squid, smoke }, this.onUpdate)} /> },
+      { title: 'Other', element: <Flags onValueChange={(fused, golden, squid, smoke, blood1, blood2, blood3, blood4, paint1, paint2, paint3, snelk1, snelk2, snelk3, snelk4, snelk5, snelk6, stitches, fungus) => this.setState({ fused, golden, squid, smoke, blood1, blood2, blood3, blood4, paint1, paint2, paint3, snelk1, snelk2, snelk3, snelk4, snelk5, snelk6, stitches, fungus }, this.onUpdate)} /> },
     ]
 
     return (
