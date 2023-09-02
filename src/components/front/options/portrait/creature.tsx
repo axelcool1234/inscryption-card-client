@@ -65,6 +65,7 @@ export default class CreaturePortraitSelect extends React.Component<Props> {
             <option value='Mothman_Stage2'>Mothman (Stage 2)</option>
             <option value='Mothman_Stage3'>Mothman (Stage 3)</option>
             <option value='MudTurtle'>Mud Turtle</option>
+            <option value='MudTurtleShelled'>Mud Turtle Shelled</option>
             <option value='Mule'>Pack Mule</option>
             <option value='Opossum'>Opossum</option>
             <option value='Otter'>River Otter</option>
